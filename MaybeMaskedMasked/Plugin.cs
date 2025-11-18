@@ -9,6 +9,7 @@ namespace MaybeMaskedMasked;
 
 [BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
 [BepInDependency("ainavt.lc.lethalconfig", BepInDependency.DependencyFlags.SoftDependency)]
+[BepInDependency("qwbarch.Mirage", BepInDependency.DependencyFlags.SoftDependency)]
 public class Plugin : BaseUnityPlugin
 {
     internal static new ManualLogSource Logger { get; private set; }
@@ -23,15 +24,16 @@ public class Plugin : BaseUnityPlugin
         Instance = this;
         Logger = base.Logger;
         ModConfig = new ModConfig(Config);
-
-        if (Chainloader.PluginInfos.ContainsKey("ainavt.lc.lethalconfig"))
-        {
-            LethalConfigIntegration.Initialize();
-        }
-
+        InitSoftDependencyIntegrations();
         var harmony = new Harmony(PluginInfo.PLUGIN_GUID);
         harmony.PatchAll();
 
         Logger.LogInfo($"{PluginInfo.PLUGIN_GUID} loaded successfully.");
+    }
+
+    private void InitSoftDependencyIntegrations()
+    {
+        if (Chainloader.PluginInfos.ContainsKey("ainavt.lc.lethalconfig"))
+            LethalConfigIntegration.Initialize();
     }
 }

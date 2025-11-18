@@ -1,0 +1,7 @@
+{
+  "name": "NameOfMod",
+  "version_number": "0.0.0",
+  "website_url": "https://github.com/github-account-name/github-repository-name",
+  "description": "A fully configurable mod with a bad description.",
+  "dependencies": ["BepInEx-BepInExPack-5.4.2304"]
+}

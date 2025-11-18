@@ -1,6 +1,6 @@
 {
   "name": "MaybeMaskedMasked",
-  "version_number": "0.0.0",
+  "version_number": "0.0.1",
   "website_url": "https://github.com/jaramp/maybe-masked-masked",
   "description": "",
   "dependencies": ["BepInEx-BepInExPack-5.4.2304"]

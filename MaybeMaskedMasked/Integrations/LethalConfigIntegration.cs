@@ -17,19 +17,8 @@ internal static class LethalConfigIntegration
 
     private static void RegisterAll()
     {
-        // # Truthy
-        RegisterCheckbox(Plugin.ModConfig.BooleanSetting.Entry);
-
-        // # Numeric
-        RegisterInput(Plugin.ModConfig.IntegerSetting.Entry);
-        RegisterSlider(Plugin.ModConfig.FloatSetting.Entry, 0, 1);
-
-        // # Misc
-        RegisterTextInput(Plugin.ModConfig.StringSetting.Entry);
-        RegisterDropdown(Plugin.ModConfig.EnumSetting.Entry);
-
-        // # Help
-        RegisterYippeeButton();
+        // # General
+        RegisterInput(Plugin.ModConfig.MaskChance.Entry);
     }
 
     private static void RegisterInput(ConfigEntry<int> entry)
@@ -64,13 +53,5 @@ internal static class LethalConfigIntegration
     private static void RegisterTextInput(ConfigEntry<string> entry)
     {
         LethalConfigManager.AddConfigItem(new TextInputFieldConfigItem(entry, requiresRestart: false));
-    }
-
-    private static void RegisterYippeeButton()
-    {
-        LethalConfigManager.AddConfigItem(new GenericButtonConfigItem("Help", "Name", "Description", "Button", () =>
-        {
-            HUDManager.Instance?.DisplayTip("Yippie", "You clicked the button!");
-        }));
     }
 }

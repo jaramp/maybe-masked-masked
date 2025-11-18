@@ -4,7 +4,7 @@ using GameNetcodeStuff;
 using HarmonyLib;
 using UnityEngine;
 
-namespace NameOfMod.Patches;
+namespace MaybeMaskedMasked.Patches;
 
 [HarmonyPatch(typeof(PlayerControllerB), "DropAllHeldItems")]
 public static class KeepItemsOnTeleporterPatch

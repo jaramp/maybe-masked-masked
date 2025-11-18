@@ -8,9 +8,9 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
-    <TeamName>NameOfTeam</TeamName>
-    <AssemblyName>NameOfMod</AssemblyName>
-    <Description>A fully configurable mod with a bad description.</Description>
+    <TeamName>jaramp</TeamName>
+    <AssemblyName>MaybeMaskedMasked</AssemblyName>
+    <Description>Adds a configurable chance that a Masked will spawn without a mask.</Description>
     <Version>0.0.1</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>

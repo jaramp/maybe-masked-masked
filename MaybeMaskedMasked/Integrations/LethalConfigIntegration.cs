@@ -4,14 +4,14 @@ using LethalConfig;
 using LethalConfig.ConfigItems;
 using LethalConfig.ConfigItems.Options;
 
-namespace NameOfMod.Integrations;
+namespace MaybeMaskedMasked.Integrations;
 
 internal static class LethalConfigIntegration
 {
     [MethodImpl(MethodImplOptions.NoInlining | MethodImplOptions.NoOptimization)]
     public static void Initialize()
     {
-        Plugin.Logger.LogInfo("LethalConfig detected — integrating NameOfMod config.");
+        Plugin.Logger.LogInfo("LethalConfig detected — integrating MaybeMaskedMasked config.");
         RegisterAll();
     }
 

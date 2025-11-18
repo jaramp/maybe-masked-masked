@@ -7,7 +7,7 @@ using Unity.Collections;
 using Unity.Netcode;
 using UnityEngine;
 
-namespace NameOfMod.Networking;
+namespace MaybeMaskedMasked.Networking;
 
 public static class SyncedEntries
 {

@@ -2,7 +2,7 @@ using System.Reflection;
 using HarmonyLib;
 using UnityEngine;
 
-namespace NameOfMod.Patches;
+namespace MaybeMaskedMasked.Patches;
 
 [HarmonyPatch(typeof(ShipTeleporter))]
 public static class TeleporterCooldownPatch

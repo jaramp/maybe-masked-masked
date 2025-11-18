@@ -1,4 +1,4 @@
-# Contributing to NameOfMod
+# Contributing to MaybeMaskedMasked
 
 Thanks for your interest in contributing! Community help is always appreciated.
 
@@ -30,7 +30,7 @@ This compiles the mod and runs all configured build steps.
 
 ### Build Outputs
 
-The compiled DLL will appear under `NameOfMod/bin/Release/netstandard2.1/`. The DLL will also be automatically copied into your BepInEx plugins folder. See variables in `NameOfMod.csproj`:
+The compiled DLL will appear under `MaybeMaskedMasked/bin/Release/netstandard2.1/`. The DLL will also be automatically copied into your BepInEx plugins folder. See variables in `MaybeMaskedMasked.csproj`:
 
 - `GameDir`: Install location for Lethal Company
 - `BepInExDir`: Location of active BepInEx folder, which may depend on your mod manager.

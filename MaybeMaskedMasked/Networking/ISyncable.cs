@@ -1,6 +1,6 @@
 using Unity.Netcode;
 
-namespace NameOfMod.Networking;
+namespace MaybeMaskedMasked.Networking;
 
 public interface ISyncable
 {

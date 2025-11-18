@@ -2,7 +2,7 @@ using HarmonyLib;
 using Unity.Collections;
 using Unity.Netcode;
 
-namespace NameOfMod.Networking;
+namespace MaybeMaskedMasked.Networking;
 
 [HarmonyPatch]
 public static class PlayerConnectionPatch

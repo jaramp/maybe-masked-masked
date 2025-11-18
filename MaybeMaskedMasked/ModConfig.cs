@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using BepInEx.Configuration;
-using NameOfMod.Networking;
+using MaybeMaskedMasked.Networking;
 using HarmonyLib;
 
-namespace NameOfMod;
+namespace MaybeMaskedMasked;
 
 public enum ModEnum { None, First, Second, Third }
 

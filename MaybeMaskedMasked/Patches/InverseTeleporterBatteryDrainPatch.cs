@@ -1,7 +1,7 @@
 using HarmonyLib;
 using UnityEngine;
 
-namespace NameOfMod.Patches;
+namespace MaybeMaskedMasked.Patches;
 
 [HarmonyPatch(typeof(ShipTeleporter), "TeleportPlayerOutWithInverseTeleporter")]
 public static class InverseTeleporterBatteryDrainPatch

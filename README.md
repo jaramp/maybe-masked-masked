@@ -1,6 +1,6 @@
-# NameOfMod
+# MaybeMaskedMasked
 
-NameOfMod is a mod for Lethal Company that adds a fully-configurable feature set to the game.
+MaybeMaskedMasked is a mod for Lethal Company that adds a fully-configurable feature set to the game.
 
 ## Features
 
@@ -9,7 +9,7 @@ NameOfMod is a mod for Lethal Company that adds a fully-configurable feature set
 
 ## Configuration
 
-The mod is configured using BepInEx's configuration system. You can modify the settings in the `BepInEx/config/NameOfMod.cfg` file.
+The mod is configured using BepInEx's configuration system. You can modify the settings in the `BepInEx/config/MaybeMaskedMasked.cfg` file.
 
 If [LethalConfig](https://thunderstore.io/c/lethal-company/p/AinaVT/LethalConfig/) is installed, you can also configure the mod in-game through the LethalConfig menu.
 
@@ -47,9 +47,9 @@ Any frequently-asked questions may be appropriate to put here as well.
 
 ## Installation
 
-It's recommended to install from [Thunderstore](https://thunderstore.io/c/lethal-company/p/NameOfTeam/NameOfMod/)
+It's recommended to install from [Thunderstore](https://thunderstore.io/c/lethal-company/p/jaramp/MaybeMaskedMasked/)
 using a mod manager such as [Gale](https://github.com/Kesomannen/gale).
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/github-account-name/github-repository-name/?tab=contributing-ov-file) for information on how to contribute to the mod.
+See [CONTRIBUTING.md](https://github.com/jaramp/maybe-masked-masked/?tab=contributing-ov-file) for information on how to contribute to the mod.

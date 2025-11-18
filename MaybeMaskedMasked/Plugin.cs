@@ -1,11 +1,11 @@
 using BepInEx;
 using BepInEx.Bootstrap;
 using BepInEx.Logging;
-using NameOfMod.Integrations;
+using MaybeMaskedMasked.Integrations;
 using HarmonyLib;
 using UnityEngine;
 
-namespace NameOfMod;
+namespace MaybeMaskedMasked;
 
 [BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
 [BepInDependency("ainavt.lc.lethalconfig", BepInDependency.DependencyFlags.SoftDependency)]

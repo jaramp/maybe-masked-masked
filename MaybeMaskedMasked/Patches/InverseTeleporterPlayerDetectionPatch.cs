@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using GameNetcodeStuff;
 using HarmonyLib;
 
-namespace NameOfMod.Patches;
+namespace MaybeMaskedMasked.Patches;
 
 /// <summary>
 /// This is a patch to keep track of players that are currently being teleported out using the inverse teleporter.

@@ -15,10 +15,11 @@ internal class MaskedPatch
         if (keepMask == 100) return;
 
         var removeMask = random.Next(0, 100);
+        Plugin.Logger.LogDebug($"Checking ({removeMask} > {keepMask})");
         if (removeMask > keepMask)
         {
-            __instance.maskTypes[0].SetActive(false);
-            __instance.maskTypes[1].SetActive(false);
+            Plugin.Logger.LogDebug("Removing mask");
+            foreach (var mask in __instance.maskTypes) mask.SetActive(false);
         }
     }
 

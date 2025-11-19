@@ -41,9 +41,6 @@
     <Reference Include="LethalConfig">
       <HintPath>Dependencies\LethalConfig.dll</HintPath>
     </Reference>
-    <Reference Include="Mirage">
-      <HintPath>Dependencies\Mirage.dll</HintPath>
-    </Reference>
   </ItemGroup>
 
   <Import Project="build.targets" />

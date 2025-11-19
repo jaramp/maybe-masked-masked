@@ -1,11 +1,7 @@
 # MaybeMaskedMasked
 
-MaybeMaskedMasked is a mod for Lethal Company that adds a fully-configurable feature set to the game.
-
-## Features
-
-- **Feature One:** The first feature of the mod.
-- **Feature Two:** The second feature of the mod.
+MaybeMaskedMasked is a very small mod for Lethal Company that adds a configurable chance for the Masked enemy to spawn without wearing a mask.
+Compatible with most mods using proper configuration.
 
 ## Configuration
 
@@ -17,33 +13,29 @@ If [LethalConfig](https://thunderstore.io/c/lethal-company/p/AinaVT/LethalConfig
 
 **General**
 
-| Option     | Value     | Default | Description                    |
-| ---------- | --------- | ------- | ------------------------------ |
-| FeatureOne | `Boolean` | `false` | Toggles the first mod feature. |
+| Option     | Value     | Default | Description                                                        |
+| ---------- | --------- | ------- | ------------------------------------------------------------------ |
+| MaskChance | `Integer` | `50`    | Percent chance between 0-100 that a Masked will be wearing a mask. |
 
-**Misc**
-
-| Option            | Value     | Default | Description                                   |
-| ----------------- | --------- | ------- | --------------------------------------------- |
-| FeatureTwoTime    | `Numeric` | `10`    | Time (in seconds) for the second mod feature. |
-| FeatureTwoSetting | `Text`    |         | Sets the text for the second mod feature.     |
-
-As an example, if you wanted a to set the second feature to "Test" every 5 seconds:
-
-```ini
-FeatureTwoTime = 5
-FeatureTwoSetting = Test
-```
-
-## Configuration Details
-
-Here's a section to explain a little more in-depth on how these features work and how to configure them.
-Any frequently-asked questions may be appropriate to put here as well.
+The base game equivalent would be setting `MaskChance` to `100` to always spawn Masked enemies with masks.
 
 ## Dependencies
 
 - [BepInExPack](https://thunderstore.io/c/lethal-company/p/BepInEx/BepInExPack/)
 - (Optional) [LethalConfig](https://thunderstore.io/c/lethal-company/p/AinaVT/LethalConfig/) for in-game configuration.
+
+## Compatibility
+
+|     | Mod                         | Version | Notes                                             |
+| --- | --------------------------- | ------- | ------------------------------------------------- |
+| 🟢  | **Mirage**                  | 0.0.0   | Overrides Mirage's `Enable mask textures` setting |
+| 🟢  | **MaskedInvisFix**          | 0.0.0   |                                                   |
+| 🟢  | **TooManyEmotes**           | 0.0.0   |                                                   |
+| 🟢  | **MaskFixes**               | 0.0.0   | Works with Tragedy masks                          |
+| ⚫  | **Masked Mask**             | 0.0.0   |                                                   |
+| ⚫  | **MaskedEnemyOverhaulFork** | 0.0.0   |                                                   |
+| ⚫  | **DramaMask**               | 0.0.0   |                                                   |
+| 🔴  | **TakeThatMaskOff**         | 0.0.0   | Fundamentally changes mask logic                  |
 
 ## Installation
 

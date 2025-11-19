@@ -31,12 +31,12 @@ public static class SyncedEntries
 
         item.Value = item.Entry.Value;
 
-        if (NetworkManager.Singleton.ConnectedClientsList.Count <= 1 || Plugin.CoroutineHost == null) return;
+        if (NetworkManager.Singleton.ConnectedClientsList.Count <= 1) return;
 
         UnsyncedEntries.Add(id);
         if (_isBroadcasting) return;
         _isBroadcasting = true;
-        Plugin.CoroutineHost.StartCoroutine(Broadcast());
+        NetworkManager.Singleton.StartCoroutine(Broadcast());
     }
 
     private static IEnumerator Broadcast()

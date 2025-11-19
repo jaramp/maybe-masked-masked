@@ -18,7 +18,7 @@ internal static class LethalConfigIntegration
     private static void RegisterAll()
     {
         // # General
-        RegisterInput(Plugin.ModConfig.MaskChance.Entry);
+        RegisterSlider(Plugin.ModConfig.MaskChance.Entry);
     }
 
     private static void RegisterInput(ConfigEntry<int> entry)
@@ -27,15 +27,15 @@ internal static class LethalConfigIntegration
         LethalConfigManager.AddConfigItem(new IntInputFieldConfigItem(entry, opts));
     }
 
-    private static void RegisterSlider(ConfigEntry<int> entry, int min, int max)
+    private static void RegisterSlider(ConfigEntry<int> entry)
     {
-        var opts = new IntSliderOptions { Min = min, Max = max, RequiresRestart = false };
+        var opts = new IntSliderOptions { RequiresRestart = false };
         LethalConfigManager.AddConfigItem(new IntSliderConfigItem(entry, opts));
     }
 
-    private static void RegisterSlider(ConfigEntry<float> entry, float min, float max)
+    private static void RegisterSlider(ConfigEntry<float> entry)
     {
-        var opts = new FloatSliderOptions { Min = min, Max = max, RequiresRestart = false };
+        var opts = new FloatSliderOptions { RequiresRestart = false };
         LethalConfigManager.AddConfigItem(new FloatSliderConfigItem(entry, opts));
     }
 

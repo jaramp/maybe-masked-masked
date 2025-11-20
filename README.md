@@ -26,7 +26,7 @@ The base game equivalent would be setting `MaskChance` to `100` to always spawn 
 
 ## Compatibility
 
-The following mods also modify Masked; they've been tested for compatibility with MaybeMaskedMasked using Lethal Company v73.
+The following mods also modify Masked enemies. They've been tested for compatibility with MaybeMaskedMasked using Lethal Company v73.
 
 |     | Mod                         | Version | Notes                                                                              |
 | --- | --------------------------- | ------- | ---------------------------------------------------------------------------------- |

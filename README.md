@@ -33,7 +33,7 @@ The following mods also modify Masked enemies. They've been tested for compatibi
 | 🟢  | **MaskedEnemyOverhaulFork** | 3.4.0   | Overrides `Remove Mask From Masked Enemy`, works with `Reveal Mask When Attacking` |
 | 🟢  | **MaskedInvisFix**          | 0.0.2   |                                                                                    |
 | 🟢  | **MaskFixes**               | 1.5.2   | Works with `Tragedy Chance`                                                        |
-| 🟢  | **Mirage**                  | 1.28.0  | Overrides `Enable mask textures` setting                                           |
+| 🟢  | **Mirage**                  | 1.28.0  | Overrides `Enable mask textures`                                                   |
 | 🟢  | **TooManyEmotes**           | 2.3.13  |                                                                                    |
 | 🟠  | **TakeThatMaskOff**         | 2.1.6   | Masks always drop on death, even when visually removed                             |
 | 🔴  | **Masked Mask**             | 1.1.2   | Multiple issues; do not use these mods together                                    |

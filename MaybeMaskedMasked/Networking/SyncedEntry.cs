@@ -20,17 +20,21 @@ public static class SyncedEntries
     {
         byte id = _idGen++;
         AllEntries.Add(id, item);
-        item.Entry.SettingChanged += (o, e) => ScheduleBroadcastFor(id, item);
+        item.Entry.SettingChanged += (o, e) => ConfigEntryChanged(id, item);
         return item;
+    }
+
+    private static void ConfigEntryChanged<T>(byte key, SyncedEntry<T> item)
+    {
+        Plugin.Logger.LogDebug("ConfigEntryChanged");
+        if (!NetworkManager.Singleton || !NetworkManager.Singleton.IsConnectedClient) item.Value = item.Entry.Value;
+        else if (NetworkManager.Singleton.IsServer) ScheduleBroadcastFor(key, item);
     }
 
     private static bool _isBroadcasting = false;
     private static void ScheduleBroadcastFor<T>(byte id, SyncedEntry<T> item)
     {
-        if (!NetworkManager.Singleton || !NetworkManager.Singleton.IsServer) return;
-
         item.Value = item.Entry.Value;
-
         if (NetworkManager.Singleton.ConnectedClientsList.Count <= 1) return;
 
         UnsyncedEntries.Add(id);

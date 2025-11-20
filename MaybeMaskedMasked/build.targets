@@ -65,6 +65,7 @@
 
     <MakeDir Directories="$(DevPluginDir)" />
     <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(DevPluginDir)" OverwriteReadOnlyFiles="true" />
+    <Copy SourceFiles="$(ThunderstoreDir)/icon.png" DestinationFolder="$(DevPluginDir)" OverwriteReadOnlyFiles="true" />
     <Message Text="Copied $(TargetFileName) to dev profile: $(DevPluginDir)" Importance="high" />
   </Target>
 </Project>

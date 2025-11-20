@@ -1,7 +1,6 @@
 # MaybeMaskedMasked
 
-MaybeMaskedMasked is a very small mod for Lethal Company that adds a configurable chance for the Masked enemy to spawn without wearing a mask.
-Compatible with most mods using proper configuration.
+MaybeMaskedMasked is a small mod that adds a configurable chance for the Masked enemy to spawn without wearing a mask.
 
 ## Configuration
 

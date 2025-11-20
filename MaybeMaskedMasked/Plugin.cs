@@ -3,7 +3,6 @@ using BepInEx.Bootstrap;
 using BepInEx.Logging;
 using MaybeMaskedMasked.Integrations;
 using HarmonyLib;
-using UnityEngine;
 
 namespace MaybeMaskedMasked;
 

@@ -26,7 +26,6 @@ public static class SyncedEntries
 
     private static void ConfigEntryChanged<T>(byte key, SyncedEntry<T> item)
     {
-        Plugin.Logger.LogDebug("ConfigEntryChanged");
         if (!NetworkManager.Singleton || !NetworkManager.Singleton.IsConnectedClient) item.Value = item.Entry.Value;
         else if (NetworkManager.Singleton.IsServer) ScheduleBroadcastFor(key, item);
     }

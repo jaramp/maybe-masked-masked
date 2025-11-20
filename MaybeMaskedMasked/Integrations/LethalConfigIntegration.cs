@@ -11,13 +11,13 @@ internal static class LethalConfigIntegration
     [MethodImpl(MethodImplOptions.NoInlining | MethodImplOptions.NoOptimization)]
     public static void Initialize()
     {
-        Plugin.Logger.LogInfo("LethalConfig detected — integrating MaybeMaskedMasked config.");
+        Plugin.Logger.LogInfo($"LethalConfig detected — integrating {PluginInfo.PLUGIN_GUID} config.");
         RegisterAll();
 
-        LethalConfigManager.AddConfigItem(new GenericButtonConfigItem("Help", "Name", "Description", "Button", () =>
-        {
-            Plugin.Logger.LogDebug($"== MaskChance: {Plugin.ModConfig.MaskChance.Value} ==");
-        }));
+        // LethalConfigManager.AddConfigItem(new GenericButtonConfigItem("Help", "Name", "Description", "Button", () =>
+        // {
+        //     Plugin.Logger.LogDebug($"== MaskChance: {Plugin.ModConfig.MaskChance.Value} ==");
+        // }));
     }
 
     private static void RegisterAll()

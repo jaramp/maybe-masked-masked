@@ -15,6 +15,7 @@ public static class PlayerConnectionPatch
         var messager = NetworkManager.Singleton.CustomMessagingManager;
         if (NetworkManager.Singleton.IsServer)
         {
+            SyncedEntries.ResetToLocalConfig();
             messager.RegisterNamedMessageHandler(MessageName, (clientId, reader) => SyncedEntries.SendAllToClient(clientId));
         }
         else

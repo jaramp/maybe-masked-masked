@@ -98,9 +98,14 @@ public static class SyncedEntries
         }
     }
 
+    public static void ResetToLocalConfig()
+    {
+        foreach (var item in AllEntries.Values) item.ResetValue();
+    }
+
     public static void StopListening(bool resetToLocalConfig = true)
     {
-        if (resetToLocalConfig) foreach (var item in AllEntries.Values) item.ResetValue();
+        if (resetToLocalConfig) ResetToLocalConfig();
         UnsyncedEntries.Clear();
         if (NetworkManager.Singleton?.CustomMessagingManager == null) return;
         NetworkManager.Singleton.CustomMessagingManager.UnregisterNamedMessageHandler(SyncMessage);

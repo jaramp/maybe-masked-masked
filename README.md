@@ -26,16 +26,18 @@ The base game equivalent would be setting `MaskChance` to `100` to always spawn 
 
 ## Compatibility
 
-|     | Mod                         | Version | Notes                                             |
-| --- | --------------------------- | ------- | ------------------------------------------------- |
-| 🟢  | **Mirage**                  | 0.0.0   | Overrides Mirage's `Enable mask textures` setting |
-| 🟢  | **MaskedInvisFix**          | 0.0.0   |                                                   |
-| 🟢  | **TooManyEmotes**           | 0.0.0   |                                                   |
-| 🟢  | **MaskFixes**               | 0.0.0   | Works with Tragedy masks                          |
-| ⚫  | **Masked Mask**             | 0.0.0   |                                                   |
-| ⚫  | **MaskedEnemyOverhaulFork** | 0.0.0   |                                                   |
-| ⚫  | **DramaMask**               | 0.0.0   |                                                   |
-| 🔴  | **TakeThatMaskOff**         | 0.0.0   | Fundamentally changes mask logic                  |
+The following mods also modify Masked; they've been tested for compatibility with MaybeMaskedMasked using Lethal Company v73.
+
+|     | Mod                         | Version | Notes                                                                              |
+| --- | --------------------------- | ------- | ---------------------------------------------------------------------------------- |
+| 🟢  | **TooManyEmotes**           | 2.3.13  |                                                                                    |
+| 🟢  | **Mirage**                  | 1.28.0  | Overrides Mirage's `Enable mask textures` setting                                  |
+| 🟢  | **MaskedInvisFix**          | 0.0.2   |                                                                                    |
+| 🟢  | **MaskFixes**               | 1.5.2   | Works with `Tragedy Chance`                                                        |
+| 🟢  | **MaskedEnemyOverhaulFork** | 3.4.0   | Overrides `Remove Mask From Masked Enemy`, works with `Reveal Mask When Attacking` |
+| 🟢  | **DramaMask**               | 2.1.4   |                                                                                    |
+| 🟠  | **TakeThatMaskOff**         | 2.1.6   | Masks always drop on death, even when visually removed                             |
+| 🔴  | **Masked Mask**             | 1.1.2   | Multiple issues; do not use these mods together                                    |
 
 ## Installation
 

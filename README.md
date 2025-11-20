@@ -30,12 +30,12 @@ The following mods also modify Masked; they've been tested for compatibility wit
 
 |     | Mod                         | Version | Notes                                                                              |
 | --- | --------------------------- | ------- | ---------------------------------------------------------------------------------- |
-| 🟢  | **TooManyEmotes**           | 2.3.13  |                                                                                    |
-| 🟢  | **Mirage**                  | 1.28.0  | Overrides Mirage's `Enable mask textures` setting                                  |
+| 🟢  | **DramaMask**               | 2.1.4   |                                                                                    |
+| 🟢  | **MaskedEnemyOverhaulFork** | 3.4.0   | Overrides `Remove Mask From Masked Enemy`, works with `Reveal Mask When Attacking` |
 | 🟢  | **MaskedInvisFix**          | 0.0.2   |                                                                                    |
 | 🟢  | **MaskFixes**               | 1.5.2   | Works with `Tragedy Chance`                                                        |
-| 🟢  | **MaskedEnemyOverhaulFork** | 3.4.0   | Overrides `Remove Mask From Masked Enemy`, works with `Reveal Mask When Attacking` |
-| 🟢  | **DramaMask**               | 2.1.4   |                                                                                    |
+| 🟢  | **Mirage**                  | 1.28.0  | Overrides Mirage's `Enable mask textures` setting                                  |
+| 🟢  | **TooManyEmotes**           | 2.3.13  |                                                                                    |
 | 🟠  | **TakeThatMaskOff**         | 2.1.6   | Masks always drop on death, even when visually removed                             |
 | 🔴  | **Masked Mask**             | 1.1.2   | Multiple issues; do not use these mods together                                    |
 

@@ -13,6 +13,11 @@ internal static class LethalConfigIntegration
     {
         Plugin.Logger.LogInfo("LethalConfig detected — integrating MaybeMaskedMasked config.");
         RegisterAll();
+
+        LethalConfigManager.AddConfigItem(new GenericButtonConfigItem("Help", "Name", "Description", "Button", () =>
+        {
+            Plugin.Logger.LogDebug($"== MaskChance: {Plugin.ModConfig.MaskChance.Value} ==");
+        }));
     }
 
     private static void RegisterAll()
